@@ -46,7 +46,19 @@ class Quiz {
             
             score += 1
             
-            return true
+            return false
+        }
+        
+        return true
+    }
+    
+    func nextQuestion() -> Bool {
+        
+        questionIndex += 1
+        
+        if questionIndex > questions.count - 1 {
+            
+            return false
         }
         
         return true
